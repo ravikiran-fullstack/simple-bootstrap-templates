@@ -10,13 +10,11 @@
 } */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 600px) {
   #question1 {
     width: 90%;
     margin-left: 5%;
   }
-
-  .row {}
 
   .col-xs-12 {
     width: 100% !important;
@@ -40,16 +38,11 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 600px) {
   #question1 {
     width: 80%;
     margin-left: 10%;
     margin-bottom: 10px;
-  }
-
-  .row {
-    display: flex;
-    justify-content: space-between;
   }
 
   .bodyHeading {
@@ -62,17 +55,16 @@
     font-size: 0.8rem;
   }
 
-  .col-sm-6{
-    width: 50%;
+  .col-sm-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .row {
-    display: flex;
-    justify-content: space-between;
-  }
 
   .bodyHeading {
     font-size: 2.5rem;
@@ -84,28 +76,32 @@
     font-size: 1.0rem;
   }
 
-  .col-md-4{
-    width: 33%;
+  .col-md-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
   }
 
   .col-md-6{
     width: 50%;
   }
 
+  .cardBody {
+    padding: 0px 1px !important;
+    border: 1px solid rgb(53, 53, 53);
+    border-top: none;
+    font-size: 0.5rem;
+    word-wrap: break-word;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .row {
-    display: flex;
-    justify-content: space-between;
-  }
 
   .col-lg-4 {
     width: 33.33% !important;
   }
-
-  .para2 {}
 
   .bodyHeading {
     font-size: 3rem;
@@ -116,27 +112,26 @@
   .subHeadingQuestion2 {
     font-size: 1.25rem;
   }
+
+  .cardBody {
+    padding: 0px 6px !important;
+    font-size: 1rem;
+    word-wrap: break-word;
+
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .example {
-    background: pink;
-  }
-
-  .row {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .col-xl-4 {
     width: 33.33%;
   }
-
-  .para2 {}
-
 }
 
+
+.para2 {
+  font-size: 1rem;
+}
 
 .input-button {
   display: flex;
@@ -165,15 +160,29 @@
   -o-border-radius: .25rem;
 }
 
-.row {}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-12, .col-sm-6, .col-md-4{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
 .col-12 {
-  width: 100% !important;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
+
 
 form {
   width: 100%;
   background-color: #E9ECEF;
+  padding-bottom: 5px;
 }
 
 .input-group {
@@ -345,12 +354,15 @@ footer a {
 
 .cardBody {
   padding: 0px 15px;
-  border: 1px solid rgb(53, 53, 53);
+  border: 1px solid #d4d2d2;
   border-top: none;
+  word-break: break-all;
+  font-size: 1rem;
+  margin-bottom:5px
 }
 
 .cardImage {
-  border: 1px solid rgb(53, 53, 53);
+  border: 1px solid #d4d2d2;
   border-bottom: none;
 }
 
@@ -369,4 +381,8 @@ footer a {
 .buttonQuestion3 {
   border: none;
   padding: 5px;
+}
+
+.price{
+  padding-top: 5px;
 }
