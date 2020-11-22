@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {
+    background: red;
+    width: 100% !important;
+  }
+
+  section {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .row {
+    /* display: flex;
+    justify-content: space-between; */
+  }
+
+  .col-xs-12 {
+    width: 100% !important;
+    display: block;
+  }
+  
+  .input-group {
+    padding: 0 10px !important;
+  }
+
+  .input-label {
+    padding: 5px 10px !important;
+    font-weight: 700;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* .example {
+    background: green;
+  } */
+
+
+  section {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+/* 
+  .input-group {
+    padding: 10px;
+  }
+
+  .input-label {
+    padding: 19px;
+    font-weight: 700;
+  } */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* .example {
+    background: blue;
+  } */
+
+
+  section {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col-6 {
+    width: 50%;
+    /* display: inline; */
+    /* border: 1px solid green; */
+  }
+
+  /* .input-group {
+    padding: 10px;
+  }
+  
+  .input-label {
+    padding: 19px;
+    font-weight: 700;
+  } */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+
+  section {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col-6 {
+    width: 50%;
+    /* display: inline; */
+    /* border: 1px solid green; */
+  }
+
+  /* .input-group {
+    padding: 10px;
+  }
+  
+  .input-label {
+    padding: 19px;
+    font-weight: 700;
+  } */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
+
+  section {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col-6 {
+    width: 50%;
+    /* display: inline; */
+    /* border: 1px solid green; */
+  }
+
+  /* .input-group {
+    padding: 10px;
+  }
+
+  .input-label {
+    padding: 19px;
+    font-weight: 700;
+  } */
+}
+
+.input-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button {
+  cursor: pointer;
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+
+.row{
+
+}
+.col-12 {
+  width: 100% !important;
+}
+
+form {
+  width: 100%;
+  /* border: 1px solid red; */
+  background-color: #E9ECEF;
+}
+
+.input-group {
+  display: flex;
+  justify-content: stretch;
+  padding: 10px;
+}
+
+.input-label {
+  display: flex;
+  justify-content: start;
+  padding: 19px;
+  font-weight: 700;
+}
+
+.input-icon {
+  padding: .375rem .75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-bottom-left-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+}
+
+.input-text {
+  width: 90%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  border-left: none;
+  /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -moz-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -ms-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -o-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+}
